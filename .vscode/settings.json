@@ -1,0 +1,14 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E402,F841,F401,E302,E305",
+    ],
+    "python.linting.mypyArgs": [
+        "--follow-imports=silent",
+        "--ignore-missing-imports",
+        "--show-column-numbers",
+        "--no-pretty",
+        "--follow-imports: {silent}",
+    ],    
+}
