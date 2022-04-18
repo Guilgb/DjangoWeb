@@ -44,7 +44,7 @@ def login(request):
 
         if User.objects.filter(email=email).exists():
             nome = User.objects.filter(
-                email=email).values_list('username', flat=True)
+                email=email).values_list('username', flat=True).get()
             user = auth.authenticate(request, username=nome, password=senha)
             if user is not None:
                 auth.login(request, user)
